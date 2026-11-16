@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery – SHAHEER GEMS Sri Lanka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shaheer-gems-theme/style.css">
+    <link rel="stylesheet" href="../shaheer-gems-theme/assets/css/main.css">
+</head>
+<body>
+
+<div id="page" class="site">
+    <header id="masthead" class="site-header">
+        <div class="container header-container">
+            <div class="site-branding">
+                <a href="index.html" class="site-logo">
+                    <img src="../shaheer-gems-theme/assets/images/logo.svg" alt="SHAHEER GEMS" width="380" height="72">
+                </a>
+            </div>
+
+            <nav id="site-navigation" class="primary-navigation">
+                <button class="mobile-close-btn">&times;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="gemstones.html">Gemstones</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-backdrop"></div>
+
+            <div class="header-actions">
+                <a href="https://api.whatsapp.com/send?phone=94777072131" target="_blank" rel="noopener noreferrer" class="btn-header-whatsapp">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    <span>WhatsApp Inquiry</span>
+                </a>
+                <button class="mobile-nav-toggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="content" class="site-content">
+        <main id="primary" class="site-main">
+
+            <section class="page-hero-banner">
+                <div class="container">
+                    <h1 class="page-title">Precious Gemstone Photo Gallery</h1>
+                    <div class="breadcrumbs">
+                        <a href="index.html">Home</a>
+                        <span>/</span>
+                        <span>Gallery</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding" style="background-color: var(--color-bg);">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-subtitle">VISUAL TREASURES</span>
+                        <h2 class="section-title">EXPLORE THE BRILLIANCE</h2>
+                        <p class="section-desc">
+                            Click any photograph to view high-resolution facets, optical clarity, and exquisite color saturation in our full-screen lightbox.
+                        </p>
+                    </div>
+
+                    <!-- Filter Tabs -->
+                    <div class="gallery-filter-tabs">
+                        <button type="button" class="gallery-tab-btn active" data-filter="all">All Gemstones</button>
+                        <button type="button" class="gallery-tab-btn" data-filter="blue-sapphire">Blue Sapphires</button>
+                        <button type="button" class="gallery-tab-btn" data-filter="yellow-sapphire">Yellow Sapphires</button>
+                        <button type="button" class="gallery-tab-btn" data-filter="ruby">Rubies</button>
+                        <button type="button" class="gallery-tab-btn" data-filter="emerald">Emeralds</button>
+                        <button type="button" class="gallery-tab-btn" data-filter="other">Other Gemstones</button>
+                    </div>
+
+                    <!-- Photo Grid -->
+                    <div class="photo-gallery-grid">
+                        <div class="gallery-item" data-category="blue-sapphire" data-full-img="../shaheer-gems-theme/assets/images/gemstones/blue-sapphire.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/blue-sapphire.svg" alt="Ceylon Royal Blue Sapphire" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Ceylon Royal Blue Sapphire</h4>
+                                <p>Blue Sapphires • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="yellow-sapphire" data-full-img="../shaheer-gems-theme/assets/images/gemstones/yellow-sapphire.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/yellow-sapphire.svg" alt="Canary Yellow Sapphire" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Canary Yellow Sapphire</h4>
+                                <p>Yellow Sapphires • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="ruby" data-full-img="../shaheer-gems-theme/assets/images/gemstones/ruby.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/ruby.svg" alt="Pigeon Blood Ruby" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Natural Pigeon Blood Ruby</h4>
+                                <p>Rubies • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="emerald" data-full-img="../shaheer-gems-theme/assets/images/gemstones/emerald.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/emerald.svg" alt="Octagonal Step Cut Emerald" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Octagonal Step Cut Emerald</h4>
+                                <p>Emeralds • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="other" data-full-img="../shaheer-gems-theme/assets/images/gemstones/padparadscha.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/padparadscha.svg" alt="Ceylon Padparadscha Sapphire" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Rare Ceylon Padparadscha</h4>
+                                <p>Other Gemstones • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="other" data-full-img="../shaheer-gems-theme/assets/images/gemstones/pink-sapphire.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/pink-sapphire.svg" alt="Hot Pink Ceylon Sapphire" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Hot Pink Ceylon Sapphire</h4>
+                                <p>Other Gemstones • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="other" data-full-img="../shaheer-gems-theme/assets/images/gemstones/white-sapphire.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/white-sapphire.svg" alt="White Ceylon Sapphire" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Brilliant White Ceylon Sapphire</h4>
+                                <p>Other Gemstones • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="other" data-full-img="../shaheer-gems-theme/assets/images/gemstones/spinel.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/spinel.svg" alt="Flame Red Spinel" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Flame Red Ceylon Spinel</h4>
+                                <p>Other Gemstones • Click to Zoom</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item" data-category="other" data-full-img="../shaheer-gems-theme/assets/images/gemstones/tourmaline.svg">
+                            <img src="../shaheer-gems-theme/assets/images/gemstones/tourmaline.svg" alt="Teal Lagoon Tourmaline" loading="lazy">
+                            <div class="gallery-overlay">
+                                <h4>Teal Lagoon Ceylon Tourmaline</h4>
+                                <p>Other Gemstones • Click to Zoom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lightbox Modal -->
+            <div id="galleryLightbox" class="lightbox-modal">
+                <div class="lightbox-content">
+                    <button id="lightboxCloseBtn" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+                    <img id="lightboxActiveImg" class="lightbox-img" src="" alt="Zoomed Gemstone Preview">
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shaheer Gems. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Home</a> | <a href="gemstones.html">Catalog</a> | <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="../shaheer-gems-theme/assets/js/main.js"></script>
+</body>
+</html>

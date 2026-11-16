@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="heroDark" cx="70%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#123A70"/>
+      <stop offset="50%" stop-color="#0B2344"/>
+      <stop offset="100%" stop-color="#051224"/>
+    </radialGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C77A"/>
+      <stop offset="50%" stop-color="#C5A059"/>
+      <stop offset="100%" stop-color="#8F6A26"/>
+    </linearGradient>
+    <linearGradient id="facetBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B6BC4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#0A244A" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#heroDark)"/>
+
+  <!-- Subtle luxury light orbs -->
+  <circle cx="1200" cy="300" r="280" fill="#1E5BB5" opacity="0.3" filter="url(#softGlow)"/>
+  <circle cx="1350" cy="550" r="220" fill="#C5A059" opacity="0.18" filter="url(#softGlow)"/>
+  <circle cx="200" cy="700" r="300" fill="#123A70" opacity="0.4" filter="url(#softGlow)"/>
+
+  <!-- Geometric Luxury Facet Mesh Overlays -->
+  <g stroke="url(#goldLight)" stroke-width="0.8" stroke-opacity="0.25" fill="url(#facetBlue)">
+    <polygon points="900,100 1200,50 1450,220 1250,380"/>
+    <polygon points="1250,380 1450,220 1550,480 1350,620"/>
+    <polygon points="1250,380 1350,620 1080,720 1020,480"/>
+    <polygon points="900,100 1250,380 1020,480 820,300"/>
+    <polygon points="1350,620 1550,480 1620,750 1380,850"/>
+    <polygon points="1080,720 1350,620 1380,850 1050,920"/>
+  </g>
+
+  <!-- Gemological Sparkles -->
+  <g transform="translate(1150, 220) scale(1.2)">
+    <polygon points="0,-25 7,-7 25,0 7,7 0,25 -7,7 -25,0 -7,-7" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="0" cy="0" r="4" fill="#E5C77A"/>
+  </g>
+  <g transform="translate(1380, 480) scale(0.9)">
+    <polygon points="0,-25 7,-7 25,0 7,7 0,25 -7,7 -25,0 -7,-7" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <g transform="translate(980, 520) scale(0.7)">
+    <polygon points="0,-25 7,-7 25,0 7,7 0,25 -7,7 -25,0 -7,-7" fill="#FFFFFF" opacity="0.75"/>
+  </g>
+</svg>

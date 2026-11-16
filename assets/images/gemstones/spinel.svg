@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#FBF4F4"/>
+      <stop offset="100%" stop-color="#F2E1E1"/>
+    </radialGradient>
+    <linearGradient id="spDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A0512"/>
+      <stop offset="100%" stop-color="#730C22"/>
+    </linearGradient>
+    <linearGradient id="spMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A81938"/>
+      <stop offset="100%" stop-color="#CC2548"/>
+    </linearGradient>
+    <linearGradient id="spLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F75778"/>
+      <stop offset="100%" stop-color="#FFA8BC"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#4A0512" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <ellipse cx="300" cy="510" rx="160" ry="24" fill="#4A0512" opacity="0.14"/>
+
+  <!-- Trilliant / Cushion Natural Ceylon Flame Spinel -->
+  <g filter="url(#shadow)" transform="translate(300, 290)">
+    <!-- Triangular / Cushion Facets -->
+    <path d="M 0,-190 C 70,-190 170,-40 160,80 C 150,170 30,195 -30,195 C -150,170 -170,80 -160,-40 C -150,-140 -70,-190 0,-190 Z" fill="url(#spDark)"/>
+    <polygon points="0,-160 110,-60 80,120 -80,120 -110,-60" fill="url(#spMid)"/>
+    <polygon points="0,-160 80,-120 110,-60" fill="url(#spLight)" opacity="0.85"/>
+    
+    <polygon points="0,-90 60,-35 45,65 -45,65 -60,-35" fill="url(#spLight)" opacity="0.95"/>
+    <polygon points="0,-90 60,-35 0,0" fill="#FFE5EC" opacity="0.85"/>
+    <polygon points="0,-90 -60,-35 0,0" fill="#FF8DA7" opacity="0.8"/>
+    <polygon points="60,-35 45,65 0,0" fill="#E6254E" opacity="0.85"/>
+    <polygon points="-60,-35 -45,65 0,0" fill="#990E2D" opacity="0.85"/>
+    <polygon points="0,0 45,65 -45,65" fill="#FA466E" opacity="0.9"/>
+
+    <g transform="translate(45, -60)">
+      <polygon points="0,-18 5,-5 18,0 5,5 0,18 -5,5 -18,0 -5,-5" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+    </g>
+    <g transform="translate(-45, 45) scale(0.65)">
+      <polygon points="0,-18 5,-5 18,0 5,5 0,18 -5,5 -18,0 -5,-5" fill="#FFFFFF"/>
+      <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>
